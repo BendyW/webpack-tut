@@ -1,0 +1,185 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.6.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'webpack/webpack',
+1 verbose cli   '2.0' ]
+2 info using npm@3.10.7
+3 info using node@v6.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData webpack/webpack
+8 silly fetchPackageMetaData 2.0
+9 silly fetchOtherPackageData webpack/webpack
+10 silly cache add args [ 'webpack/webpack', null ]
+11 verbose cache add spec webpack/webpack
+12 silly fetchNamedPackageData 2.0
+13 silly mapToRegistry name 2.0
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry data Result {
+16 silly mapToRegistry   raw: '2.0',
+16 silly mapToRegistry   scope: null,
+16 silly mapToRegistry   escapedName: '2.0',
+16 silly mapToRegistry   name: '2.0',
+16 silly mapToRegistry   rawSpec: '',
+16 silly mapToRegistry   spec: 'latest',
+16 silly mapToRegistry   type: 'tag' }
+17 silly mapToRegistry uri https://registry.npmjs.org/2.0
+18 silly cache add parsed spec Result {
+18 silly cache add   raw: 'webpack/webpack',
+18 silly cache add   scope: null,
+18 silly cache add   escapedName: null,
+18 silly cache add   name: null,
+18 silly cache add   rawSpec: 'webpack/webpack',
+18 silly cache add   spec: 'github:webpack/webpack',
+18 silly cache add   type: 'hosted',
+18 silly cache add   hosted:
+18 silly cache add    { type: 'github',
+18 silly cache add      ssh: 'git@github.com:webpack/webpack.git',
+18 silly cache add      sshUrl: 'git+ssh://git@github.com/webpack/webpack.git',
+18 silly cache add      httpsUrl: 'git+https://github.com/webpack/webpack.git',
+18 silly cache add      gitUrl: 'git://github.com/webpack/webpack.git',
+18 silly cache add      shortcut: 'github:webpack/webpack',
+18 silly cache add      directUrl: 'https://raw.githubusercontent.com/webpack/webpack/master/package.json' } }
+19 verbose addRemoteGit caching webpack/webpack
+20 verbose addRemoteGit webpack/webpack is a repository hosted by github
+21 silly tryGitProto attempting to clone git://github.com/webpack/webpack.git
+22 silly tryClone cloning webpack/webpack via git://github.com/webpack/webpack.git
+23 verbose tryClone git-github-com-webpack-webpack-git-c2334f6b not in flight; caching
+24 verbose correctMkdir /Users/benwaldman/.npm/_git-remotes correctMkdir not in flight; initializing
+25 verbose request uri https://registry.npmjs.org/2.0
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 1:50:45 PM
+28 verbose request id fa2b0ecacabb1b68
+29 http request GET https://registry.npmjs.org/2.0
+30 verbose makeDirectory /Users/benwaldman/.npm/_git-remotes creation not in flight; initializing
+31 silly makeDirectory /Users/benwaldman/.npm/_git-remotes uid: 501 gid: 20
+32 info git [ 'clone',
+32 info git   '--template=/Users/benwaldman/.npm/_git-remotes/_templates',
+32 info git   '--mirror',
+32 info git   'git://github.com/webpack/webpack.git',
+32 info git   '/Users/benwaldman/.npm/_git-remotes/git-github-com-webpack-webpack-git-c2334f6b' ]
+33 http 404 https://registry.npmjs.org/2.0
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=0',
+34 verbose headers   'content-length': '2',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Wed, 21 Dec 2016 19:50:45 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   age: '0',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-ord1744-ORD',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1482349845.228282,VS0,VE87',
+34 verbose headers   vary: 'Accept-Encoding' }
+35 silly get cb [ 404,
+35 silly get   { 'content-type': 'application/json',
+35 silly get     'cache-control': 'max-age=0',
+35 silly get     'content-length': '2',
+35 silly get     'accept-ranges': 'bytes',
+35 silly get     date: 'Wed, 21 Dec 2016 19:50:45 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     age: '0',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-ord1744-ORD',
+35 silly get     'x-cache': 'MISS',
+35 silly get     'x-cache-hits': '0',
+35 silly get     'x-timer': 'S1482349845.228282,VS0,VE87',
+35 silly get     vary: 'Accept-Encoding' } ]
+36 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/2.0
+36 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+36 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+36 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+36 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+36 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+36 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+36 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+36 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+36 silly fetchPackageMetaData  error for 2.0 { Error: Registry returned 404 for GET on https://registry.npmjs.org/2.0
+36 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+36 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+36 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+36 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+36 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+36 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+36 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+36 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12) pkgid: '2.0', statusCode: 404, code: 'E404' }
+37 verbose mirrorRemote webpack/webpack git clone git://github.com/webpack/webpack.git
+38 verbose correctMkdir /Users/benwaldman/.npm/_git-remotes correctMkdir not in flight; initializing
+39 verbose setPermissions webpack/webpack set permissions on /Users/benwaldman/.npm/_git-remotes/git-github-com-webpack-webpack-git-c2334f6b
+40 verbose resolveHead webpack/webpack original treeish: master
+41 info git [ 'rev-list', '-n1', 'master' ]
+42 silly resolveHead webpack/webpack resolved treeish: 8059be6d66ed106ae8ed88ca31b540a5f137166e
+43 verbose resolveHead webpack/webpack resolved Git URL: git://github.com/webpack/webpack.git#8059be6d66ed106ae8ed88ca31b540a5f137166e
+44 silly resolveHead Git working directory: /var/folders/1t/zck7kbrx0918xx6g7qhl47500000gn/T/npm-44686-b0488840/git-cache-6fc14a1d/8059be6d66ed106ae8ed88ca31b540a5f137166e
+45 info git [ 'clone',
+45 info git   '/Users/benwaldman/.npm/_git-remotes/git-github-com-webpack-webpack-git-c2334f6b',
+45 info git   '/var/folders/1t/zck7kbrx0918xx6g7qhl47500000gn/T/npm-44686-b0488840/git-cache-6fc14a1d/8059be6d66ed106ae8ed88ca31b540a5f137166e' ]
+46 verbose cloneResolved webpack/webpack clone Cloning into '/var/folders/1t/zck7kbrx0918xx6g7qhl47500000gn/T/npm-44686-b0488840/git-cache-6fc14a1d/8059be6d66ed106ae8ed88ca31b540a5f137166e'...
+46 verbose cloneResolved done.
+47 info git [ 'checkout', '8059be6d66ed106ae8ed88ca31b540a5f137166e' ]
+48 verbose checkoutTreeish webpack/webpack checkout Note: checking out '8059be6d66ed106ae8ed88ca31b540a5f137166e'.
+48 verbose checkoutTreeish
+48 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+48 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+48 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+48 verbose checkoutTreeish
+48 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+48 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+48 verbose checkoutTreeish
+48 verbose checkoutTreeish   git checkout -b <new-branch-name>
+48 verbose checkoutTreeish
+48 verbose checkoutTreeish HEAD is now at 8059be6... Merge pull request #3481 from webpack/test/case-sensitive
+49 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+50 verbose updateSubmodules webpack/webpack submodule update
+51 verbose addLocalDirectory /Users/benwaldman/.npm/webpack/2.2.0-rc.1/package.tgz not in flight; packing
+52 verbose correctMkdir /Users/benwaldman/.npm correctMkdir not in flight; initializing
+53 verbose tar pack [ '/Users/benwaldman/.npm/webpack/2.2.0-rc.1/package.tgz',
+53 verbose tar pack   '/var/folders/1t/zck7kbrx0918xx6g7qhl47500000gn/T/npm-44686-b0488840/git-cache-6fc14a1d/8059be6d66ed106ae8ed88ca31b540a5f137166e' ]
+54 verbose tarball /Users/benwaldman/.npm/webpack/2.2.0-rc.1/package.tgz
+55 verbose folder /var/folders/1t/zck7kbrx0918xx6g7qhl47500000gn/T/npm-44686-b0488840/git-cache-6fc14a1d/8059be6d66ed106ae8ed88ca31b540a5f137166e
+56 verbose addLocalTarball adding from inside cache /Users/benwaldman/.npm/webpack/2.2.0-rc.1/package.tgz
+57 verbose correctMkdir /Users/benwaldman/.npm correctMkdir not in flight; initializing
+58 verbose addRemoteGit data._from: webpack/webpack
+59 verbose addRemoteGit data._resolved: git://github.com/webpack/webpack.git#8059be6d66ed106ae8ed88ca31b540a5f137166e
+60 silly cache afterAdd webpack@2.2.0-rc.1
+61 verbose afterAdd /Users/benwaldman/.npm/webpack/2.2.0-rc.1/package/package.json not in flight; writing
+62 verbose correctMkdir /Users/benwaldman/.npm correctMkdir not in flight; initializing
+63 verbose afterAdd /Users/benwaldman/.npm/webpack/2.2.0-rc.1/package/package.json written
+64 silly rollbackFailedOptional Starting
+65 silly rollbackFailedOptional Finishing
+66 silly runTopLevelLifecycles Finishing
+67 silly install printInstalled
+68 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/2.0
+68 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+68 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+68 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+68 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+68 verbose stack     at emitTwo (events.js:106:13)
+68 verbose stack     at Request.emit (events.js:191:7)
+68 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+68 verbose stack     at emitOne (events.js:96:13)
+68 verbose stack     at Request.emit (events.js:188:7)
+68 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+69 verbose statusCode 404
+70 verbose pkgid 2.0
+71 verbose cwd /Users/benwaldman/Sites/projects/webpack-tut
+72 error Darwin 15.6.0
+73 error argv "/usr/local/Cellar/node/6.6.0/bin/node" "/usr/local/bin/npm" "install" "webpack/webpack" "2.0"
+74 error node v6.6.0
+75 error npm  v3.10.7
+76 error code E404
+77 error 404 Registry returned 404 for GET on https://registry.npmjs.org/2.0
+78 error 404
+79 error 404 '2.0' is not in the npm registry.
+80 error 404 You should bug the author to publish it (or use the name yourself!)
+81 error 404 Note that you can also install from a
+82 error 404 tarball, folder, http url, or git url.
+83 verbose exit [ 1, true ]
